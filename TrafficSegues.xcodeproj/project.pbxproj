@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB02C2E728048F74005950D9 /* KinematicsWebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02C2E628048F74005950D9 /* KinematicsWebKitViewController.swift */; };
+		EB02C2E728048F74005950D9 /* KinematicsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02C2E628048F74005950D9 /* KinematicsWebViewController.swift */; };
 		EB02C2E92804922D005950D9 /* ForceWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02C2E82804922D005950D9 /* ForceWebViewController.swift */; };
 		EB02C2EB28049306005950D9 /* MomentumWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB02C2EA28049306005950D9 /* MomentumWebViewController.swift */; };
 		EB36C39927DFA629005EC221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36C39827DFA629005EC221 /* AppDelegate.swift */; };
@@ -16,10 +16,15 @@
 		EB36C3A027DFA629005EC221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB36C39E27DFA629005EC221 /* Main.storyboard */; };
 		EB36C3A227DFA62B005EC221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB36C3A127DFA62B005EC221 /* Assets.xcassets */; };
 		EB36C3A527DFA62B005EC221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB36C3A327DFA62B005EC221 /* LaunchScreen.storyboard */; };
+		EB3DCB7B28203E8A00F070CD /* KinematicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DCB7A28203E8A00F070CD /* KinematicsViewController.swift */; };
+		EB3DCB7D28203ECA00F070CD /* PhysicsEqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DCB7C28203ECA00F070CD /* PhysicsEqViewController.swift */; };
+		EB3DCB8128203F4600F070CD /* ForceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DCB8028203F4600F070CD /* ForceViewController.swift */; };
+		EBADD3B328240A390067DA74 /* MomentumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBADD3B228240A390067DA74 /* MomentumViewController.swift */; };
+		EBADD3B728241BF90067DA74 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBADD3B528241AC50067DA74 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB02C2E628048F74005950D9 /* KinematicsWebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinematicsWebKitViewController.swift; sourceTree = "<group>"; };
+		EB02C2E628048F74005950D9 /* KinematicsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinematicsWebViewController.swift; sourceTree = "<group>"; };
 		EB02C2E82804922D005950D9 /* ForceWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceWebViewController.swift; sourceTree = "<group>"; };
 		EB02C2EA28049306005950D9 /* MomentumWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumWebViewController.swift; sourceTree = "<group>"; };
 		EB36C39527DFA629005EC221 /* TrafficSegues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficSegues.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +35,11 @@
 		EB36C3A127DFA62B005EC221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB36C3A427DFA62B005EC221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB36C3A627DFA62B005EC221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3DCB7A28203E8A00F070CD /* KinematicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinematicsViewController.swift; sourceTree = "<group>"; };
+		EB3DCB7C28203ECA00F070CD /* PhysicsEqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsEqViewController.swift; sourceTree = "<group>"; };
+		EB3DCB8028203F4600F070CD /* ForceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceViewController.swift; sourceTree = "<group>"; };
+		EBADD3B228240A390067DA74 /* MomentumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumViewController.swift; sourceTree = "<group>"; };
+		EBADD3B528241AC50067DA74 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBADD3B728241BF90067DA74 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,7 @@
 			children = (
 				EB36C39727DFA629005EC221 /* TrafficSegues */,
 				EB36C39627DFA629005EC221 /* Products */,
+				EBADD3B428241AC40067DA74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +77,12 @@
 				EB36C39827DFA629005EC221 /* AppDelegate.swift */,
 				EB36C39A27DFA629005EC221 /* SceneDelegate.swift */,
 				EB36C39C27DFA629005EC221 /* ViewController.swift */,
-				EB02C2E628048F74005950D9 /* KinematicsWebKitViewController.swift */,
+				EB3DCB7C28203ECA00F070CD /* PhysicsEqViewController.swift */,
+				EB3DCB7A28203E8A00F070CD /* KinematicsViewController.swift */,
+				EB02C2E628048F74005950D9 /* KinematicsWebViewController.swift */,
+				EB3DCB8028203F4600F070CD /* ForceViewController.swift */,
 				EB02C2E82804922D005950D9 /* ForceWebViewController.swift */,
+				EBADD3B228240A390067DA74 /* MomentumViewController.swift */,
 				EB02C2EA28049306005950D9 /* MomentumWebViewController.swift */,
 				EB36C39E27DFA629005EC221 /* Main.storyboard */,
 				EB36C3A127DFA62B005EC221 /* Assets.xcassets */,
@@ -74,6 +90,14 @@
 				EB36C3A627DFA62B005EC221 /* Info.plist */,
 			);
 			path = TrafficSegues;
+			sourceTree = "<group>";
+		};
+		EBADD3B428241AC40067DA74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBADD3B528241AC50067DA74 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3DCB8128203F4600F070CD /* ForceViewController.swift in Sources */,
 				EB36C39D27DFA629005EC221 /* ViewController.swift in Sources */,
 				EB02C2EB28049306005950D9 /* MomentumWebViewController.swift in Sources */,
 				EB36C39927DFA629005EC221 /* AppDelegate.swift in Sources */,
-				EB02C2E728048F74005950D9 /* KinematicsWebKitViewController.swift in Sources */,
+				EB3DCB7D28203ECA00F070CD /* PhysicsEqViewController.swift in Sources */,
+				EB02C2E728048F74005950D9 /* KinematicsWebViewController.swift in Sources */,
 				EB36C39B27DFA629005EC221 /* SceneDelegate.swift in Sources */,
 				EB02C2E92804922D005950D9 /* ForceWebViewController.swift in Sources */,
+				EBADD3B328240A390067DA74 /* MomentumViewController.swift in Sources */,
+				EB3DCB7B28203E8A00F070CD /* KinematicsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

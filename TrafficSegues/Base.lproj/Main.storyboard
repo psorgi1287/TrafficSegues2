@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hBC-UN-q4W">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,120 +11,171 @@
         <!--Physics Equations -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhysicsEqViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKa-It-cUr">
-                                <rect key="frame" x="141" y="432.5" width="132" height="31"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Force Equations ">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.46504372179790554" green="0.62435808111108937" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="forceButton:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="VbP-wm-N2t"/>
-                                    <segue destination="d4i-qH-oEk" kind="show" id="bAW-eq-ESL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-u2-trm">
-                                <rect key="frame" x="124" y="140" width="166.5" height="31"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Kinematics Equations ">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="0.25766724930319818" blue="0.057770674412909617" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="kinematicsButton:" destination="aev-05-uTt" eventType="touchUpInside" id="Vr1-fV-CP3"/>
-                                    <segue destination="y1B-ud-wrK" kind="show" id="IUK-4k-dJf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-gN-OAK">
-                                <rect key="frame" x="124.5" y="737" width="165" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-BV-GgT">
+                                <rect key="frame" x="129" y="610" width="132" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Momentum Equations">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.07434401314603041" green="0.58237834812439593" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.50435918570000005" green="0.82213795190000005" blue="0.43175870179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="momentumButton:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="UbL-C0-DmO"/>
-                                    <segue destination="iY6-bn-8wu" kind="show" id="H4N-JV-zug"/>
+                                    <action selector="momentumEquationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gq3-Zq-Jfa"/>
+                                    <segue destination="4ac-oS-ptb" kind="show" id="D37-3v-HVk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-u2-trm">
+                                <rect key="frame" x="112" y="140" width="167" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kinematics Equations ">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.93497842549999999" green="0.53419941660000003" blue="0.4313795567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kinematicsEquationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sM5-cK-sxl"/>
+                                    <segue destination="y1B-ud-wrK" kind="show" id="IUK-4k-dJf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKa-It-cUr">
+                                <rect key="frame" x="129" y="375" width="132" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Force Equations ">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.70349025730000003" green="0.96857863659999999" blue="0.97256273029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forceEuqationsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUL-MG-UyV"/>
+                                    <segue destination="d4i-qH-oEk" kind="show" id="Qur-kl-I6H"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.69735747400400749" blue="0.36667754080988924" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="TKa-It-cUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27e-GW-hya"/>
-                            <constraint firstItem="K3b-gN-OAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IEX-U1-EhX"/>
-                            <constraint firstItem="TKa-It-cUr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NuU-fg-r3d"/>
-                            <constraint firstItem="Agt-u2-trm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="ODP-2i-X0U"/>
-                            <constraint firstItem="Agt-u2-trm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QDc-68-6Hx"/>
-                            <constraint firstItem="Agt-u2-trm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qcs-Sz-alM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K3b-gN-OAK" secondAttribute="bottom" constant="94" id="R6F-DN-SI6"/>
-                            <constraint firstItem="K3b-gN-OAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cBR-VH-iUL"/>
-                            <constraint firstItem="Agt-u2-trm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2O-Pl-BKq"/>
-                            <constraint firstItem="TKa-It-cUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vAO-MG-oPU"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.53176649916529128" green="0.58176970340194534" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Physics Equations " id="gHA-A0-zw0">
                         <barButtonItem key="backBarButtonItem" title="Back to Home" id="CFj-OB-sPr"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="aev-05-uTt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
         </scene>
         <!--Force-->
         <scene sceneID="2a0-hv-AqW">
             <objects>
-                <viewController id="d4i-qH-oEk" sceneMemberID="viewController">
+                <viewController id="d4i-qH-oEk" customClass="ForceViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Mp-bq-RI7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfE-8v-wbp">
-                                <rect key="frame" x="123" y="770" width="169" height="31"/>
+                                <rect key="frame" x="125" y="779" width="142" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Link to Force OneNote"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Link to Force Help"/>
                                 <connections>
-                                    <segue destination="c52-D3-Wac" kind="show" id="EUk-aq-9yF"/>
+                                    <action selector="forceButton:" destination="8E8-3g-SnY" eventType="touchUpInside" id="wgy-00-NsQ"/>
+                                    <segue destination="c52-D3-Wac" kind="show" id="2vH-80-5dl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="∑ F / M = A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfm-oh-q90">
+                                <rect key="frame" x="71" y="176" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fg = MG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-uL-V3y">
+                                <rect key="frame" x="71" y="303" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fk = UsFn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upG-ku-nT1">
+                                <rect key="frame" x="71" y="430" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fsmax = UsFn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKY-Oj-Th1">
+                                <rect key="frame" x="71" y="557" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="M = Kg" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbt-4c-wFP">
+                                <rect key="frame" x="71" y="674" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="∑F = N" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8L-Iw-qRo">
+                                <rect key="frame" x="71" y="632" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="G = 9.8 M/S^2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R40-ye-Qz7">
+                                <rect key="frame" x="71" y="716" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FrX-Sw-Pjj"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.7041510106314659" green="0.96786459505958677" blue="0.97240763900000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Force" id="JTP-Y1-hNT">
-                        <barButtonItem key="backBarButtonItem" title="Back to Yellow" id="9dk-Si-iZg"/>
+                        <barButtonItem key="backBarButtonItem" title="Force" id="9dk-Si-iZg"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="forceOfGravityEquation" destination="Ucl-uL-V3y" id="fEe-t3-hRH"/>
+                        <outlet property="forcesUnits" destination="R8L-Iw-qRo" id="7Tf-j8-6Kz"/>
+                        <outlet property="gravityUnits" destination="R40-ye-Qz7" id="qkQ-6k-4Dz"/>
+                        <outlet property="kineticFrictionEquation" destination="upG-ku-nT1" id="FpE-hv-Xvf"/>
+                        <outlet property="massUnits" destination="jbt-4c-wFP" id="bCC-hm-GWO"/>
+                        <outlet property="staticFrictionEquation" destination="xKY-Oj-Th1" id="5Qf-fW-hax"/>
+                        <outlet property="sumOfForcesEquation" destination="wfm-oh-q90" id="ZDA-yg-Mzy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4M-mQ-3x7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8E8-3g-SnY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2185.507246376812" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Force Web View Controller-->
         <scene sceneID="jod-pf-04V">
             <objects>
-                <viewController id="c52-D3-Wac" sceneMemberID="viewController">
+                <viewController id="c52-D3-Wac" customClass="ForceWebViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egc-Oa-Uzh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-R3-FOY">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Szx-y0-PYC">
+                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -139,48 +190,90 @@
                     <navigationItem key="navigationItem" id="oJ6-cb-XZa">
                         <barButtonItem key="backBarButtonItem" title="Force" id="fgm-PE-paK"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="forceWebView" destination="Szx-y0-PYC" id="iPI-H8-kWx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVq-8s-LKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3005.7971014492755" y="97.767857142857139"/>
+            <point key="canvasLocation" x="3003.0769230769229" y="97.393364928909946"/>
         </scene>
         <!--Momentum-->
-        <scene sceneID="ppb-iL-9jD">
+        <scene sceneID="pZK-bI-9MK">
             <objects>
-                <viewController id="iY6-bn-8wu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hrJ-lH-7dX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="4ac-oS-ptb" customClass="MomentumViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7pW-Kb-JdK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npn-34-EN2">
-                                <rect key="frame" x="105" y="782" width="206" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24S-8k-K48">
+                                <rect key="frame" x="107" y="779" width="178" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Link to Momentum OneNote"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Link to Momentum Help"/>
                                 <connections>
-                                    <segue destination="VSW-0h-dzz" kind="show" id="xUa-Rd-eUc"/>
+                                    <action selector="forceButton:" destination="8E8-3g-SnY" eventType="touchUpInside" id="rAz-dg-jPN"/>
+                                    <action selector="forceOneNote:" destination="d4i-qH-oEk" eventType="touchUpInside" id="5lC-mT-2R1"/>
+                                    <action selector="momentumOneNoteWith_sender:" destination="4ac-oS-ptb" eventType="touchUpInside" id="qwp-tg-6Jc"/>
+                                    <segue destination="VSW-0h-dzz" kind="show" id="kIN-HX-AZS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="G = 9.8 M/S^2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nu1-Qo-SS2">
+                                <rect key="frame" x="71" y="716" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="P = MV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXs-Zj-1mI">
+                                <rect key="frame" x="71" y="177" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Po1 + Po2 = Pf1 + Pf2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neb-Cg-aQl">
+                                <rect key="frame" x="71" y="547" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ΔP = FavgΔT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK2-UV-UmF">
+                                <rect key="frame" x="71" y="362" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2Qe-8P-pqC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="bcB-bk-DTT"/>
+                        <color key="backgroundColor" red="0.50435918570000005" green="0.82213795190000005" blue="0.43175870179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Momentum" id="RFa-mi-4Dz"/>
+                    <navigationItem key="navigationItem" title="Momentum" id="CDn-qi-LmE"/>
+                    <connections>
+                        <outlet property="changeInMomentumEquation" destination="GK2-UV-UmF" id="5tE-1c-vGI"/>
+                        <outlet property="gravityUnits" destination="nu1-Qo-SS2" id="qS8-8L-CpK"/>
+                        <outlet property="momentumEqualityEquation" destination="Neb-Cg-aQl" id="AEk-HW-Vje"/>
+                        <outlet property="momentumEquation" destination="sXs-Zj-1mI" id="fV1-z8-Hze"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PE4-rO-RgN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2u-zs-7Nf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="801"/>
+            <point key="canvasLocation" x="2184.6153846153848" y="799.76303317535542"/>
         </scene>
-        <!--View Controller-->
+        <!--Momentum Web View Controller-->
         <scene sceneID="RWS-Hx-NOU">
             <objects>
-                <viewController id="VSW-0h-dzz" sceneMemberID="viewController">
+                <viewController id="VSW-0h-dzz" customClass="MomentumWebViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tl5-hv-3Wb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-fw-mIH">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -193,73 +286,104 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RzL-SL-qLT"/>
+                    <connections>
+                        <outlet property="momentumWebView" destination="yTA-fw-mIH" id="EQK-r5-Lo6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7js-vu-7a5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3005.7971014492755" y="800.89285714285711"/>
+            <point key="canvasLocation" x="3003.0769230769229" y="800.47393364928905"/>
         </scene>
         <!--Kinematics-->
         <scene sceneID="GO5-yJ-dGF">
             <objects>
-                <viewController id="y1B-ud-wrK" customClass="KinematicsWebViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y1B-ud-wrK" customClass="KinematicsViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FxK-qP-s4I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A = ΔV / ΔT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyK-m3-ldF">
-                                <rect key="frame" x="82" y="265" width="250" height="21"/>
+                                <rect key="frame" x="70" y="259" width="250" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="V = ΔX / ΔT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8L-JY-E1O">
-                                <rect key="frame" x="82" y="122.5" width="250" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="F8L-JY-E1O" secondAttribute="height" multiplier="250:21" id="2b8-vx-fF1"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V = ΔX / ΔT " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8L-JY-E1O">
+                                <rect key="frame" x="70" y="164" width="250" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUt-qT-gKR">
-                                <rect key="frame" x="82" y="553.5" width="250" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V^2f = Vo^2 + 2AΔX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUt-qT-gKR">
+                                <rect key="frame" x="70" y="449" width="250" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vf = Vo + AT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-nX-DKx">
+                                <rect key="frame" x="70" y="354" width="250" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X = Xo + VoT + 1/2 AT^2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRM-et-fgw">
-                                <rect key="frame" x="82" y="655" width="184" height="21"/>
+                                <rect key="frame" x="70" y="544" width="250" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52933222059999996" green="0.58304721120000003" blue="0.97239106890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="V = M/S" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nI4-xT-tJu">
+                                <rect key="frame" x="70" y="632" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A = M/S^2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBl-1B-RZD">
+                                <rect key="frame" x="70" y="674" width="250" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-Qi-HRU">
-                                <rect key="frame" x="106" y="770" width="204" height="31"/>
+                                <rect key="frame" x="107" y="779" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Link to Kinematics OneNote"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Link to Kinematics Help"/>
                                 <connections>
-                                    <action selector="kinematicsOneNote:" destination="WVL-CJ-LVN" eventType="touchUpInside" id="YTh-zp-sd1"/>
-                                    <segue destination="Otk-ON-KQk" kind="show" id="pw2-Mu-rI2"/>
+                                    <action selector="kinematicsButton:" destination="WVL-CJ-LVN" eventType="touchUpInside" id="Sua-G7-qHQ"/>
+                                    <segue destination="Otk-ON-KQk" kind="show" id="fRa-LT-RDl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vf = Vo + AT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-nX-DKx">
-                                <rect key="frame" x="83" y="448" width="250" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="T = S" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3g-wu-VxN">
+                                <rect key="frame" x="70" y="716" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FYp-Ry-Qlu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.939883989157136" green="0.53592482342652747" blue="0.43218279259450537" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Kinematics" id="fT6-bC-toG"/>
                     <connections>
-                        <outlet property="kinematicsWebView" destination="Q9S-Qi-HRU" id="Vqw-Do-if2"/>
+                        <outlet property="accelerationEquation" destination="KyK-m3-ldF" id="Tm6-1Z-HUa"/>
+                        <outlet property="accelerationUnits" destination="nBl-1B-RZD" id="eXL-ra-HMT"/>
+                        <outlet property="finalVelocityEquation" destination="Aca-nX-DKx" id="rAD-tx-5oR"/>
+                        <outlet property="finalVeloctiyChangeInXEquation" destination="nUt-qT-gKR" id="dGE-FC-2Sj"/>
+                        <outlet property="positionEquation" destination="IRM-et-fgw" id="ovC-Jj-kgc"/>
+                        <outlet property="timeUnits" destination="w3g-wu-VxN" id="XXS-kf-BR1"/>
+                        <outlet property="velocityEquation" destination="F8L-JY-E1O" id="vYW-MS-y0q"/>
+                        <outlet property="velocityUnits" destination="nI4-xT-tJu" id="wfY-8U-phN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVK-05-UfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -273,7 +397,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hBC-UN-q4W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a0R-UN-YFg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -285,16 +409,16 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Kinematics Web View Controller-->
         <scene sceneID="8oU-df-b9q">
             <objects>
-                <viewController id="Otk-ON-KQk" sceneMemberID="viewController">
+                <viewController id="Otk-ON-KQk" customClass="KinematicsWebViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BG1-sI-VHy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-Sc-4Wg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fss-Fy-oo1">
+                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -307,10 +431,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="aQz-dH-duf"/>
+                    <connections>
+                        <outlet property="kinematicsWebView" destination="fss-Fy-oo1" id="PD5-Wu-KSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcL-il-M2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3005.7971014492755" y="-609.375"/>
+            <point key="canvasLocation" x="3003.0769230769229" y="-609.95260663507111"/>
         </scene>
     </scenes>
     <resources>
